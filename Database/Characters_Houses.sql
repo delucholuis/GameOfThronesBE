@@ -1,3 +1,5 @@
-SELECT "FirstName","LastName","HouseName", FirstName||" "||LastName AS FullName
-FROM [Characters] JOIN Houses
-ON [Characters].houseid = [Houses].id
+CREATE TABLE Characters_Houses (
+  CharacterId interger, 
+  HouseId integer, 
+  PRIMARY KEY (CharacterId, HouseId)
+);
